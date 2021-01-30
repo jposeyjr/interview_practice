@@ -6,15 +6,12 @@
 //   return reversed;
 // };
 
-const reverse = (str) => {
-  return str.split('').reverse().join('');
-};
-
 // const reverse = (str) => {
-//   let arr = Array.from(str);
-//   arr.reduce((reversed, char) => {
-//     return char + reversed;
-//   }, '');
+//   return str.split('').reverse().join('');
 // };
+
+const reverse = (str) => {
+  return str.split('').reduce((reversed, char) => char + reversed, '');
+};
 
 module.exports = reverse;
